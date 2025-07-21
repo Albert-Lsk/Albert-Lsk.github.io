@@ -1,85 +1,92 @@
 ---
-permalink: /about/
-title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-layouts_gallery:
-  - url: /assets/images/mm-layout-splash.png
-    image_path: /assets/images/mm-layout-splash.png
-    alt: "splash layout example"
-  - url: /assets/images/mm-layout-single-meta.png
-    image_path: /assets/images/mm-layout-single-meta.png
-    alt: "single layout with comments and related posts"
-  - url: /assets/images/mm-layout-archive.png
-    image_path: /assets/images/mm-layout-archive.png
-    alt: "archive layout example"
-last_modified_at: 2022-05-27T11:59:26-04:00
-toc: true
+layout: single
+title: "关于我"
+permalink: /resume/
+author_profile: true
 ---
 
-Minimal Mistakes is a flexible two-column Jekyll theme. Perfect for hosting your personal site, blog, or portfolio on GitHub or self-hosting on your own server. As the name implies --- styling is purposely minimalistic to be enhanced and customized by you :smile:.
+## 👋 你好，我是Albert
 
-{% include gallery id="layouts_gallery" caption="Examples of included layouts `splash`, `single`, and `archive`." %}
+我是一名专注于**AI生态系统开发**的技术工程师，致力于探索人工智能与前端技术的深度融合。
 
-[Install the Theme]({{ "/docs/quick-start-guide/" | relative_url }}){: .btn .btn--success .btn--large}
+### 🎯 技术方向
 
-## Notable Features
+**🤖 AI生态开发**
+- 大语言模型(LLM)应用开发
+- 智能聊天机器人构建
+- AI工具链集成与优化
+- 机器学习模型部署
 
-- Bundled as a "theme gem" for easier install/upgrading.
-- Compatible with GitHub Pages.
-- Support for Jekyll's built-in Sass/SCSS preprocessor.
-- Nine different skins (color variations).
-- Several responsive layout options (single, archive index, search, splash, and paginated home page).
-- Optimized for search engines with support for [Twitter Cards](https://dev.twitter.com/cards/overview) and [Open Graph](http://ogp.me/) data
-- Optional [header images](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#headers), [custom sidebars](https://mmistakes.github.io/minimal-mistakes/docs/layouts/#sidebars), [table of contents](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#table-of-contents), [galleries](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#gallery), related posts, [breadcrumb links](https://mmistakes.github.io/minimal-mistakes/docs/configuration/#breadcrumb-navigation-beta), [navigation lists](https://mmistakes.github.io/minimal-mistakes/docs/helpers/#navigation-list), and more.
-- Commenting support (powered by [Disqus](https://disqus.com/), [Facebook](https://developers.facebook.com/docs/plugins/comments), [Discourse](https://www.discourse.org/), [utterances](https://utteranc.es/), [giscus](https://giscus.app/), static-based via [Staticman v1 and v2](https://staticman.net/), and custom).
-- [Google Analytics](https://www.google.com/analytics/) support.
-- UI localized text in English (default), Arabic (عربي), Brazilian Portuguese (Português brasileiro), Bulgarian, Catalan, Chinese, Czech, Danish, Dutch, Finnish, French (Français), German (Deutsch), Greek, Hebrew, Hindi (हिंदी), Hungarian, Indonesian, Irish (Gaeilge), Italian (Italiano), Japanese, Kiswahili, Korean, Malayalam, Myanmar (Burmese), Nepali (Nepalese), Norwegian (Norsk), Persian (فارسی), Polish, Punjabi (ਪੰਜਾਬੀ), Romanian, Russian, Slovak, Spanish (Español), Swedish, Thai, Turkish (Türkçe), and Vietnamese.
+**💻 前端技术栈**
+- JavaScript/TypeScript
+- React、Vue.js框架
+- Node.js后端开发
+- 现代化构建工具
 
-## Demo Pages
+### 💼 工作经验
 
-| Name                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [Post with Header Image][header-image-post] | A post with a large header image. |
-| [HTML Tags and Formatting Post][html-tags-post] | A variety of common markup showing how the theme styles them. |
-| [Syntax Highlighting Post][syntax-post] | Post displaying highlighted code. |
-| [Post with a Gallery][gallery-post] | A post showing several images wrapped in `<figure>` elements. |
-| [Sample Collection Page][sample-collection] | Single page from a collection. |
-| [Categories Archive][categories-archive] | Posts grouped by category. |
-| [Tags Archive][tags-archive] | Posts grouped by tag. |
+**前端开发工程师** | XX科技公司 | 2022.03 - 至今
+- 负责公司主要产品的前端开发
+- 参与AI功能模块的设计与实现
+- 优化用户体验，提升产品性能
 
-For even more demo pages check the [posts archive][year-archive].
+**全栈开发实习生** | YY创新公司 | 2021.06 - 2022.02
+- 参与多个AI项目的前端开发
+- 学习并应用最新的前端技术
+- 积累了丰富的项目实战经验
 
-[header-image-post]: {{ "" | relative_url }}{% post_url 2012-03-15-layout-header-image-text-readability %}
-[gallery-post]: {{ "" | relative_url }}{% post_url 2010-09-09-post-gallery %}
-[html-tags-post]: {{ "" | relative_url }}{% post_url 2013-01-11-markup-html-tags-and-formatting %}
-[syntax-post]: {{ "" | relative_url }}{% post_url 2013-08-16-markup-syntax-highlighting %}
-[sample-collection]: {{ "/recipes/chocolate-chip-cookies/" | relative_url }}
-[categories-archive]: {{ "/categories/" | relative_url }}
-[tags-archive]: {{ "/tags/" | relative_url }}
-[year-archive]: {{ "/year-archive/" | relative_url }}
+### 🎓 教育背景
+
+**计算机科学与技术** | 某某大学 | 2018.09 - 2022.06
+- 主修：软件工程、数据结构、算法设计
+- 相关课程：人工智能、机器学习、Web开发
+- 毕业项目：基于深度学习的智能推荐系统
+
+### 🚀 项目经验
+
+**🤖 AI聊天机器人系统**
+- **技术栈**：Node.js, OpenAI API, React
+- **功能**：智能对话、上下文理解、多平台支持
+- **成果**：日活用户500+，用户满意度95%+
+
+**📊 数据可视化平台**
+- **技术栈**：Vue.js, D3.js, Python Flask
+- **功能**：实时数据展示、交互式图表、报表生成
+- **成果**：为公司决策提供重要数据支持
+
+**🌐 个人技术博客**
+- **技术栈**：Jekyll, GitHub Pages
+- **内容**：AI技术分享、前端开发心得
+- **地址**：[我的CSDN博客](https://blog.csdn.net/AlbertDS)
+
+### 🏆 技能证书
+
+- **前端开发**：HTML5、CSS3、JavaScript高级认证
+- **AI技术**：机器学习工程师认证（计划中）
+- **英语能力**：CET-6 (分数：XXX)
+
+### 🌟 个人特质
+
+- **🔍 学习能力强**：对新技术保持敏锐嗅觉，快速学习适应
+- **🛠️ 动手能力强**：喜欢通过实践来掌握技术
+- **📢 分享精神**：积极参与技术社区，分享学习心得
+- **🎯 目标导向**：有明确的职业规划和发展方向
+
+### 📈 未来规划
+
+- **短期目标**：深入掌握AI应用开发，成为AI+前端的复合型人才
+- **中期目标**：参与大型AI产品的架构设计，积累更多项目经验
+- **长期目标**：成为AI技术专家，推动AI技术的普及和应用
+
+### 📫 联系方式
+
+- 📧 **邮箱**：carlalbert9596@gmail.com
+- 🐙 **GitHub**：[Albert-Lsk](https://github.com/Albert-Lsk)
+- 📝 **技术博客**：[CSDN博客](https://blog.csdn.net/AlbertDS)
+- 💼 **LinkedIn**：Albert-AI-Developer
 
 ---
 
-## Credits
+> "人工智能的未来不在于取代人类，而在于增强人类的能力。"
 
-### Icons + Demo Images:
-
-- [The Noun Project](https://thenounproject.com) -- Garrett Knoll, Arthur Shlain, and [tracy tam](https://thenounproject.com/tracytam)
-- [Font Awesome](http://fontawesome.io/)
-- [Unsplash](https://unsplash.com/)
-
-### Other:
-
-- [Jekyll](https://jekyllrb.com/)
-- [jQuery](https://jquery.com/)
-- [Susy](http://susy.oddbird.net/)
-- [Breakpoint](http://breakpoint-sass.com/)
-- [Magnific Popup](http://dimsemenov.com/plugins/magnific-popup/)
-- [FitVids.JS](http://fitvidsjs.com/)
-- Greedy Navigation - [lukejacksonn](https://codepen.io/lukejacksonn/pen/PwmwWV)
-- [jQuery Smooth Scroll](https://github.com/kswedberg/jquery-smooth-scroll)
-- [Lunr](http://lunrjs.com)
-
----
-
-Minimal Mistakes is designed, developed, and maintained by Michael Rose. Just another boring, tattooed, designer from Buffalo New York.
+**欢迎联系我，一起探索AI技术的无限可能！** 🚀
