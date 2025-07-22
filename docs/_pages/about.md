@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "关于我"
-permalink: /resume/
+permalink: /about/
 author_profile: true
 ---
 
