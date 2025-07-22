@@ -7,3 +7,34 @@
 @import "minimal-mistakes";
 
 /* 🚀 你的科技风样式从这里开始 */
+/* ======================
+   🎨 科技感配色系统
+   ====================== */
+
+// 定义颜色变量（像定义常数一样）
+:root {
+  /* 主要颜色 - 深蓝科技色 */
+  --tech-primary: #0a192f;        /* 深蓝背景 */
+  --tech-secondary: #172a45;      /* 次要背景 */
+  --tech-accent: #64ffda;         /* 青色强调色 */
+  --tech-blue: #2196f3;           /* 科技蓝 */
+  --tech-purple: #bb86fc;         /* 科技紫 */
+  
+  /* 文字颜色 */
+  --text-bright: #ffffff;         /* 亮白文字 */
+  --text-normal: #a8b2d1;         /* 正常文字 */
+  --text-dim: #8892b0;            /* 暗淡文字 */
+  
+  /* 特殊效果色 */
+  --glow-color: #64ffda;          /* 发光效果 */
+  --border-color: #233554;        /* 边框颜色 */
+  --success-color: #4ade80;       /* 成功色 */
+  --warning-color: #fbbf24;       /* 警告色 */
+}
+
+/* 应用到整个网站 */
+body {
+  background: var(--tech-primary);
+  color: var(--text-normal);
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+}
