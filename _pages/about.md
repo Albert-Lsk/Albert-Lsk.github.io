@@ -7,34 +7,6 @@ author_profile: true
 
 <style>
 .page__content {
-  font-size: 16px;        /* 调整正文字体大小 */
-  line-height: 1.6;       /* 调整行高 */
-}
-
-.page__content h1 {
-  font-size: 24px;        /* 调整一级标题 */
-}
-
-.page__content h2 {
-  font-size: 20px;        /* 调整二级标题 */
-}
-
-.page__content h3 {
-  font-size: 18px;        /* 调整三级标题 */
-}
-</style>
-
-# 页面内容开始...
-
----
-layout: single
-title: "关于我"
-permalink: /about/
-author_profile: true
----
-
-<style>
-.page__content {
   font-size: 16px;
   line-height: 1.8;
 }
