@@ -2,39 +2,490 @@
 # 这个前置是必须的，不要删除！
 ---
 
-// 导入默认主题
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+// 🌟 导入dark皮肤作为基础
+@import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
 
-/* 🚀 你的科技风样式从这里开始 */
+/* 🚀 科技风增强样式 */
 /* ======================
-   🎨 科技感配色系统
+   💫 基于Dark皮肤的科技风升级
    ====================== */
 
-// 定义颜色变量（像定义常数一样）
+// 定义你的专属科技风颜色变量
 :root {
-  /* 主要颜色 - 深蓝科技色 */
-  --tech-primary: #0a192f;        /* 深蓝背景 */
-  --tech-secondary: #172a45;      /* 次要背景 */
-  --tech-accent: #64ffda;         /* 青色强调色 */
-  --tech-blue: #2196f3;           /* 科技蓝 */
-  --tech-purple: #bb86fc;         /* 科技紫 */
+  /* AI科技风主色调 */
+  --ai-primary: #0f172a;          /* 更深的深蓝背景 */
+  --ai-secondary: #1e293b;        /* 次要背景 */
+  --ai-accent: #00d4ff;           /* 电光蓝强调色 */
+  --ai-accent-2: #7c3aed;         /* 紫色AI色 */
+  --ai-success: #10b981;          /* AI绿色 */
   
-  /* 文字颜色 */
-  --text-bright: #ffffff;         /* 亮白文字 */
-  --text-normal: #a8b2d1;         /* 正常文字 */
-  --text-dim: #8892b0;            /* 暗淡文字 */
+  /* 文字颜色优化 */
+  --text-bright: #f8fafc;         /* 更亮的白色 */
+  --text-normal: #cbd5e1;         /* 优化的正常文字色 */
+  --text-dim: #94a3b8;            /* 暗文字 */
+  --text-accent: var(--ai-accent);
   
-  /* 特殊效果色 */
-  --glow-color: #64ffda;          /* 发光效果 */
-  --border-color: #233554;        /* 边框颜色 */
-  --success-color: #4ade80;       /* 成功色 */
-  --warning-color: #fbbf24;       /* 警告色 */
+  /* 特效颜色 */
+  --glow-blue: var(--ai-accent);
+  --glow-purple: var(--ai-accent-2);
+  --border-tech: #334155;
+  
+  /* 渐变定义 */
+  --gradient-ai: linear-gradient(135deg, var(--ai-accent), var(--ai-accent-2));
+  --gradient-bg: linear-gradient(135deg, var(--ai-primary), var(--ai-secondary));
 }
 
-/* 应用到整个网站 */
+/* ======================
+   🔧 Dark皮肤样式覆盖
+   ====================== */
+
+// 覆盖body背景，使用更科技的渐变
 body {
-  background: var(--tech-primary);
+  background: var(--gradient-bg);
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Monaco', 'Cascadia Code', monospace;
+  line-height: 1.7;
+}
+
+// 页面整体容器
+.layout--default {
+  background: transparent;
+}
+
+/* ======================
+   🎯 导航栏科技化改造
+   ====================== */
+
+.masthead {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--border-tech);
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// 当滚动时添加更强的效果
+.masthead.scrolled {
+  background: rgba(15, 23, 42, 0.98);
+  box-shadow: 0 8px 32px rgba(0, 212, 255, 0.1);
+}
+
+.site-title {
+  font-weight: 700;
+  font-size: 1.6em;
+  background: var(--gradient-ai);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+  letter-spacing: -0.02em;
+}
+
+.site-title:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 15px var(--glow-blue));
+}
+
+// 导航链接增强
+.greedy-nav a {
   color: var(--text-normal);
-  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.greedy-nav a:hover {
+  color: var(--ai-accent);
+  text-shadow: 0 0 12px var(--glow-blue);
+  transform: translateY(-2px);
+}
+
+// 下划线动画效果
+.greedy-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-ai);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1px;
+}
+
+.greedy-nav a:hover::after {
+  width: 100%;
+}
+
+/* ======================
+   💎 内容区域美化
+   ====================== */
+
+.page__content {
+  background: rgba(30, 41, 59, 0.4);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--border-tech);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.page__content:hover {
+  border-color: var(--ai-accent);
+  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.1);
+}
+
+/* ======================
+   ✨ 标题系统重新设计
+   ====================== */
+
+h1 {
+  background: var(--gradient-ai);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.75em;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  color: var(--ai-accent);
+  font-size: 2.1em;
+  font-weight: 700;
+  margin: 2.5rem 0 1.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+h2::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--ai-accent);
+  animation: pulse-glow 2s infinite;
+  font-size: 0.8em;
+}
+
+h3 {
+  color: var(--text-bright);
+  font-size: 1.6em;
+  font-weight: 600;
+  margin: 2rem 0 1rem 0;
+  border-left: 4px solid var(--ai-accent);
+  padding-left: 1rem;
+}
+
+/* ======================
+   🎪 按钮系统升级
+   ====================== */
+
+.btn {
+  background: var(--gradient-ai);
+  border: none;
+  border-radius: 12px;
+  color: var(--text-bright);
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  font-family: inherit;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+}
+
+// 按钮光效动画
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 212, 255, 0.4);
+  filter: brightness(1.1);
+}
+
+.btn:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* ======================
+   🏷️ 标签系统重新设计
+   ====================== */
+
+.tech-tag, .tag, 
+.page__taxonomy .page__taxonomy-item {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.6));
+  color: var(--ai-accent);
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  font-size: 0.85em;
+  font-weight: 600;
+  border: 1px solid var(--border-tech);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  margin: 0.25rem;
+  backdrop-filter: blur(8px);
+}
+
+.tech-tag:hover, .tag:hover,
+.page__taxonomy .page__taxonomy-item:hover {
+  background: var(--gradient-ai);
+  color: var(--text-bright);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
+  border-color: var(--ai-accent);
+}
+
+/* ======================
+   👤 侧边栏作者信息升级
+   ====================== */
+
+.sidebar {
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 16px;
+  border: 1px solid var(--border-tech);
+  backdrop-filter: blur(12px);
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.author__avatar img {
+  border: 3px solid var(--ai-accent);
+  box-shadow: 0 0 25px rgba(0, 212, 255, 0.4);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+}
+
+.author__avatar img:hover {
+  transform: scale(1.08) rotate(5deg);
+  box-shadow: 0 0 35px rgba(0, 212, 255, 0.6);
+  border-color: var(--ai-accent-2);
+}
+
+.author__name {
+  background: var(--gradient-ai);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.author__bio {
+  color: var(--text-normal);
+  font-style: italic;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+// 社交链接美化
+.author__urls li a {
+  color: var(--text-normal);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.3rem 0;
+  display: block;
+}
+
+.author__urls li a:hover {
+  color: var(--ai-accent);
+  text-shadow: 0 0 12px var(--glow-blue);
+  transform: translateX(8px);
+  padding-left: 0.5rem;
+}
+
+/* ======================
+   🎬 动画效果库
+   ====================== */
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    opacity: 1; 
+    text-shadow: 0 0 5px var(--glow-blue);
+  }
+  50% { 
+    opacity: 0.7; 
+    text-shadow: 0 0 15px var(--glow-blue);
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// 页面加载动画
+.page__content, .sidebar {
+  animation: fade-in-up 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ======================
+   💻 代码块和技术元素
+   ====================== */
+
+pre, code {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--border-tech);
+  border-radius: 8px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+pre {
+  padding: 1.5rem;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+// 代码块装饰
+pre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-ai);
+  border-radius: 8px 8px 0 0;
+}
+
+// 引用块美化
+blockquote {
+  border-left: 4px solid var(--ai-accent);
+  background: rgba(30, 41, 59, 0.6);
+  padding: 1.5rem 2rem;
+  border-radius: 0 12px 12px 0;
+  font-style: italic;
+  color: var(--text-normal);
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+blockquote::before {
+  content: '"';
+  font-size: 4em;
+  color: var(--ai-accent);
+  position: absolute;
+  top: -0.5rem;
+  left: 0.5rem;
+  opacity: 0.3;
+}
+
+/* ======================
+   🔗 链接系统优化
+   ====================== */
+
+a {
+  color: var(--ai-accent);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+a:hover {
+  color: var(--text-bright);
+  text-shadow: 0 0 12px var(--glow-blue);
+}
+
+// 内容区域链接下划线效果
+.page__content a:not(.btn):hover {
+  text-decoration: underline;
+  text-decoration-color: var(--ai-accent);
+  text-underline-offset: 3px;
+}
+
+/* ======================
+   📱 响应式优化
+   ====================== */
+
+@media (max-width: 768px) {
+  .page__content {
+    padding: 1.5rem;
+    margin: 0.5rem;
+    border-radius: 12px;
+  }
+  
+  h1 {
+    font-size: 2.2em;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+    padding-left: 1rem;
+  }
+  
+  .masthead {
+    padding: 1rem 0;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85em;
+  }
+}
+
+/* ======================
+   🎨 特殊装饰元素
+   ====================== */
+
+// 分隔线美化
+hr {
+  border: none;
+  height: 2px;
+  background: var(--gradient-ai);
+  margin: 3rem 0;
+  border-radius: 1px;
+  opacity: 0.8;
+}
+
+// 表格美化
+table {
+  border: 1px solid var(--border-tech);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(30, 41, 59, 0.4);
+}
+
+table th {
+  background: var(--gradient-ai);
+  color: var(--text-bright);
+  font-weight: 600;
+}
+
+table td, table th {
+  border-color: var(--border-tech);
+  padding: 0.75rem 1rem;
+}
+
+table tr:hover {
+  background: rgba(0, 212, 255, 0.05);
 }
