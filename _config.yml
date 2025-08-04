@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "ALSKai的技术世界"
+title                    : "ALSKai探索之旅"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Albert"
-description              : "AI生态开发者的技术分享与探索之路"
+name                     : "Albert-Lsk"
+description              : "Albert-Lsk的ai技术世界"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Albert-Lsk/Albert-Lsk.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Albert"
   avatar           : "/assets/images/avatar.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "🤖AI生态开发者 | 💻全栈工程师 | 🚀专注人工智能与新媒体融合"
+  bio              : "🤖AI生态开发者 | 💻全栈产品工程师 | 🚀专注于ai技术融合"
   location         : "Somewhere in Space"
   email            :
   links:
