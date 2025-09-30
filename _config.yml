@@ -191,7 +191,8 @@ collections:
     permalink: /:collection/:path/
 
 # Theme
-theme: minimal-mistakes-jekyll
+# theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "default"
 
 # 如果使用远程主题(推荐GitHub Pages)
