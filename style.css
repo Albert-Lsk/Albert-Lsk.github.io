@@ -169,16 +169,143 @@ section {
     color: var(--fg-secondary);
 }
 
-/* Status Section */
-.status {
+/* Projects Section */
+.projects {
     padding: var(--space-lg) 0;
+    border-top: 1px solid var(--border);
 }
 
-.status-card {
+.projects h2 {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    margin-bottom: var(--space-md);
+}
+
+.project-grid {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.project-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: var(--space-md);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 255, 136, 0.15);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border);
+}
+
+.project-header h3 {
+    color: var(--fg-primary);
+    font-size: 1.125rem;
+    flex: 1;
+}
+
+.project-tag {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent);
+    padding: 0.25rem 0.5rem;
+    background: var(--accent-dim);
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+.project-content p {
+    color: var(--fg-secondary);
+    margin-bottom: var(--space-sm);
+    line-height: 1.8;
+    font-size: 0.9375rem;
+}
+
+.project-content p:last-of-type {
+    margin-bottom: var(--space-sm);
+}
+
+.project-content strong {
+    color: var(--fg-primary);
+    font-weight: 600;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding-top: var(--space-sm);
+    border-top: 1px solid var(--border);
+}
+
+.tech-stack span {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--fg-secondary);
+    padding: 0.25rem 0.5rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.tech-stack span:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* About Section */
+.about {
+    padding: var(--space-lg) 0;
+}
+
+.about h2 {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    margin-bottom: var(--space-md);
+}
+
+.about-content {
+    background: var(--bg-secondary);
+    border-left: 3px solid var(--accent);
+    padding: var(--space-md);
+    border-radius: 0 8px 8px 0;
+}
+
+.about-content p {
+    color: var(--fg-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-sm);
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* Status Section */
+.status {
+    text-align: center;
+    padding: var(--space-sm) 0;
+}
+
+.site-note {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--fg-secondary);
 }
 
 .status-card h2 {
