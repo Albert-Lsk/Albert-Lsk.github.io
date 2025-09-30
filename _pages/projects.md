@@ -1,282 +1,261 @@
 ---
+layout: single
 title: "项目展示"
-layout: collection
 permalink: /projects/
-classes: wide
 author_profile: true
+classes: wide
 header:
-  overlay_color: "#4CAF50"
+  overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/project-header.jpg
-  caption: "AI与创新的融合"
-excerpt: "这里展示了我在AI领域的一些项目和实践，从模型微调到应用开发。"
-feature_row:
-  - image_path: /assets/images/projects/ai-assistant.jpg
-    alt: "AI对话助手"
-    title: "行业垂直AI对话助手"
-    excerpt: "基于大型语言模型(LLM)的行业特定助手，通过微调和RAG技术提供专业领域问答。"
-    url: "#"
-    btn_label: "了解详情"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/projects/data-viz.jpg
-    alt: "数据可视化平台"
-    title: "AI数据可视化平台"
-    excerpt: "结合React和D3.js的智能数据分析平台，使用AI技术自动生成最佳可视化方案。"
-    url: "#"
-    btn_label: "了解详情"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/projects/multimodal.jpg
-    alt: "多模态内容生成"
-    title: "多模态内容创作工具"
-    excerpt: "整合文本、图像和音频生成能力的一站式创作平台，适用于营销和社交媒体内容生产。"
-    url: "#"
-    btn_label: "了解详情"
-    btn_class: "btn--primary"
+  overlay_image: /assets/images/projects-header.jpg
+excerpt: "AI工具实践 | 产品设计 | 效率提升"
 ---
 
-<div class="projects-intro">
-  <p>作为一名AI生态开发者，我致力于将前沿AI技术应用到实际场景中。以下是我的一些代表性项目，涵盖了语言模型应用、数据分析和多模态内容生成等领域。</p>
-</div>
+## 🎯 项目概览
 
-{% include feature_row %}
+作为"AI时代的工具驯服师",我专注于将AI工具应用到实际工作场景,探索提升效率的最佳实践。以下是我的代表性项目和实践案例。
 
-## 🚀 开源贡献
+---
 
-<div class="project-card">
-  <div class="project-content">
-    <h3>GPT应用框架贡献</h3>
-    <p>为开源LLM应用框架贡献代码，主要关注中文语境下的应用优化和新功能开发。</p>
-    <div class="project-tags">
-      <span class="tag">Python</span>
-      <span class="tag">FastAPI</span>
-      <span class="tag">LangChain</span>
-    </div>
-    <a href="https://github.com/Albert-Lsk" class="btn btn--info">查看代码</a>
-  </div>
-</div>
+## 🤖 AI工具实践
 
-<div class="project-card">
-  <div class="project-content">
-    <h3>AI学习资源整理</h3>
-    <p>整理和维护AI学习路线图和资源集合，帮助开发者快速入门大模型应用开发。</p>
-    <div class="project-tags">
-      <span class="tag">教程</span>
-      <span class="tag">资源集合</span>
-      <span class="tag">社区贡献</span>
-    </div>
-    <a href="https://github.com/Albert-Lsk" class="btn btn--info">访问项目</a>
-  </div>
-</div>
+### 1. 个人效率自动化系统
 
-## 💼 商业项目
+**项目描述**:  
+使用N8N工作流引擎 + 多款AI工具,构建个人效率自动化系统,实现信息聚合、内容处理、任务管理的智能化。
 
-<div class="project-timeline">
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <h3>企业知识库智能助手</h3>
-      <p class="timeline-date">2023.10 - 至今</p>
-      <p>基于大模型和RAG技术的企业内部知识问答系统，支持文档解析、语义检索和上下文对话。该系统显著提升了企业内部知识获取效率，减少了重复咨询。</p>
-      <div class="project-tags">
-        <span class="tag">LLM</span>
-        <span class="tag">向量检索</span>
-        <span class="tag">Vue.js</span>
-      </div>
-    </div>
-  </div>
+**技术栈**:
+- N8N (工作流自动化)
+- ChatGPT / Claude (内容生成和分析)
+- Notion API (数据存储)
+- RSS / API集成
 
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <h3>智能内容创作平台</h3>
-      <p class="timeline-date">2023.05 - 2023.09</p>
-      <p>为新媒体团队开发的一站式内容创作平台，集成了文案生成、图像生成和视频剪辑建议功能，大幅提升了内容团队的生产效率。</p>
-      <div class="project-tags">
-        <span class="tag">GPT-4</span>
-        <span class="tag">Stable Diffusion</span>
-        <span class="tag">React</span>
-      </div>
-    </div>
-  </div>
+**核心功能**:
+- 📰 **信息聚合** - 自动抓取技术博客、AI资讯并智能摘要
+- 📝 **内容处理** - AI辅助的文章总结和知识提取
+- 📊 **数据分析** - 工作数据的自动统计和可视化
+- 🔔 **智能提醒** - 基于优先级的任务提醒系统
 
-  <div class="timeline-item">
-    <div class="timeline-marker"></div>
-    <div class="timeline-content">
-      <h3>数据分析自动化工具</h3>
-      <p class="timeline-date">2022.11 - 2023.04</p>
-      <p>结合传统BI和AI技术的数据分析工具，能够自动识别数据中的异常模式并生成分析报告，为业务决策提供智能支持。</p>
-      <div class="project-tags">
-        <span class="tag">机器学习</span>
-        <span class="tag">Python</span>
-        <span class="tag">D3.js</span>
-      </div>
-    </div>
-  </div>
-</div>
+**成果**:
+- ⏱️ 每天节省1-2小时信息处理时间
+- 📈 信息吸收效率提升40%
+- 🎯 重要任务跟踪准确率100%
 
-## 🧪 实验性项目
+**心得分享**:
+> "不要被工具复杂性吓倒,从最简单的'每天自动汇总新闻'开始,逐步迭代。30分钟上手,持续优化才是王道。"
 
-<div class="experiments-grid">
-  <div class="experiment-item">
-    <h3>AI音乐生成工具</h3>
-    <p>探索基于深度学习的音乐生成技术，可根据文本提示或情绪描述创作原创音乐片段。</p>
-    <div class="project-tags">
-      <span class="tag">TensorFlow</span>
-      <span class="tag">音频处理</span>
-    </div>
-  </div>
+---
 
-  <div class="experiment-item">
-    <h3>个人助理机器人</h3>
-    <p>结合日程管理、信息检索和对话功能的个人助理机器人，探索AI如何提升个人生产力。</p>
-    <div class="project-tags">
-      <span class="tag">自然语言处理</span>
-      <span class="tag">API集成</span>
-    </div>
-  </div>
+### 2. AI工具对比评测体系
 
-  <div class="experiment-item">
-    <h3>实时翻译眼镜原型</h3>
-    <p>概念验证项目，探索使用AR眼镜和AI翻译技术实现实时字幕显示的可能性。</p>
-    <div class="project-tags">
-      <span class="tag">AR</span>
-      <span class="tag">语音识别</span>
-    </div>
-  </div>
-</div>
+**项目描述**:  
+深度使用10+款主流AI工具,建立系统化的评测框架,为不同场景提供工具选择指南。
 
-<style>
-  .projects-intro {
-    margin-bottom: 3em;
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
+**评测维度**:
+- 🎯 **任务适配性** - 不同工具擅长的场景
+- ⚡ **响应速度** - 实际使用的流畅度
+- 💰 **成本效益** - 免费额度和付费性价比
+- 🌐 **中文支持** - 中文语境下的表现
+- 🔧 **易用性** - 学习曲线和上手难度
 
-  .project-card {
-    margin-bottom: 2em;
-    padding: 1.5em;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+**工具矩阵**:
 
-  .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-  }
+| 工具 | 最佳场景 | 中文能力 | 推荐指数 |
+|------|----------|----------|----------|
+| ChatGPT | 通用对话、编程辅助 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Claude | 长文档分析、深度思考 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
+| Gemini | 多模态处理、搜索集成 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| DeepSeek | 国内使用、高性价比 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
+| Kimi | 超长文本、文档分析 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
 
-  .project-content h3 {
-    margin-top: 0;
-    color: #2e7d32;
-  }
+**实践建议**:
+- 💡 **组合使用策略** - 根据任务特点选择最优工具
+- 🔄 **工作流设计** - 多工具协同提升效率
+- 💰 **成本优化** - 合理利用免费额度
 
-  .project-tags {
-    margin: 1em 0;
-  }
+---
 
-  .project-tags .tag {
-    display: inline-block;
-    padding: 0.3em 0.8em;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
-    border-radius: 20px;
-    background-color: #e8f5e9;
-    color: #2e7d32;
-    font-size: 0.85em;
-  }
+### 3. AI内容创作工作流
 
-  .project-timeline {
-    position: relative;
-    margin: 2em 0 3em;
-  }
+**项目描述**:  
+构建完整的AI辅助内容创作流程,从选题、大纲、初稿到润色的全流程实践。
 
-  .project-timeline:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 15px;
-    width: 3px;
-    background: #4CAF50;
-  }
+**工作流程**:
 
-  .timeline-item {
-    position: relative;
-    margin-bottom: 2em;
-    padding-left: 45px;
-  }
+```
+1. 选题灵感 (Perplexity搜索热点)
+   ↓
+2. 大纲构建 (ChatGPT快速生成框架)
+   ↓
+3. 内容扩展 (Claude深度内容生成)
+   ↓
+4. 内容润色 (DeepSeek中文优化)
+   ↓
+5. 配图生成 (Midjourney/豆包)
+   ↓
+6. 发布分发 (N8N自动化)
+```
 
-  .timeline-marker {
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #4CAF50;
-    border: 5px solid #fff;
-    box-shadow: 0 0 0 3px #4CAF50;
-  }
+**技术要点**:
+- 📋 **Prompt工程** - 高质量提示词设计
+- 🔄 **迭代优化** - 多轮对话改进内容
+- 🎨 **视觉增强** - AI配图提升吸引力
+- 📊 **数据驱动** - 基于反馈优化流程
 
-  .timeline-content {
-    padding: 1.5em;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  }
+**成果数据**:
+- 📝 内容产出效率提升3倍
+- ⏰ 单篇文章创作时间从4小时降至1.5小时
+- 📈 内容质量评分提升25%
 
-  .timeline-content h3 {
-    margin-top: 0;
-    color: #2e7d32;
-  }
+---
 
-  .timeline-date {
-    font-weight: bold;
-    color: #4CAF50;
-    margin-bottom: 0.8em;
-  }
+## 💼 产品设计项目
 
-  .experiments-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5em;
-    margin-top: 2em;
-  }
+### 1. 工业智能产品 MVP
 
-  .experiment-item {
-    padding: 1.5em;
-    border-radius: 8px;
-    background-color: #f1f8e9;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-  }
+**项目背景**:  
+在震兑工业智能科技担任产品经理期间,负责工业场景数字化产品的0到1设计。
 
-  .experiment-item:hover {
-    transform: translateY(-5px);
-  }
+**项目职责**:
+- 👥 **用户研究** - 深入工厂调研,理解真实需求
+- 📐 **产品设计** - 完成原型设计和PRD文档
+- 🤝 **团队协作** - 协调研发、设计、销售团队
+- 📊 **数据分析** - 建立产品指标体系
 
-  .experiment-item h3 {
-    margin-top: 0;
-    color: #2e7d32;
-  }
+**核心挑战**:
+- 工程背景到产品思维的转换
+- 传统制造业客户的数字化认知教育
+- 跨部门沟通和项目推进
 
-  @media screen and (max-width: 768px) {
-    .experiments-grid {
-      grid-template-columns: 1fr;
-    }
+**关键成果**:
+- ✅ 完成3个产品模块的MVP交付
+- 📈 客户满意度达85%+
+- 🎯 为公司开拓新业务线提供基础
 
-    .project-timeline:before {
-      left: 12px;
-    }
+**经验总结**:
+> "工程背景让我理解技术实现的复杂性,产品思维让我聚焦用户价值。两者结合是我的核心竞争力。"
 
-    .timeline-marker {
-      width: 24px;
-      height: 24px;
-    }
+---
 
-    .timeline-item {
-      padding-left: 35px;
-    }
-  }
-</style>
+### 2. 电商产品功能优化
+
+**项目背景**:  
+在Outdoor Master担任产品经理,负责电商产品线的功能迭代和AI功能探索。
+
+**优化方向**:
+- 🛒 **购物体验** - 简化购买流程,提升转化率
+- 🤖 **AI集成** - 探索智能客服、内容生成等场景
+- 📊 **数据分析** - 建立完整的产品数据监控体系
+
+**实践案例**:
+
+**1) 购买流程优化**
+- 问题发现:用户在结算页流失率高达35%
+- 数据分析:定位3个主要摩擦点
+- 优化方案:简化表单、优化支付流程
+- 成果:转化率提升12%,流失率降至23%
+
+**2) AI功能探索**
+- 智能客服:集成AI回答常见问题
+- 内容生成:AI辅助产品描述优化
+- 个性化推荐:基于用户行为的智能推荐
+
+**技能应用**:
+- 产品分析工具(Google Analytics, Hotjar)
+- A/B测试方法论
+- 用户体验设计
+- 数据驱动决策
+
+---
+
+## 🛠️ 技术实践
+
+### Python自动化脚本
+
+**应用场景**:
+- 📊 数据处理和分析
+- 🤖 API接口调用
+- 📁 文件批量处理
+- 📈 报表自动生成
+
+**代码示例** (数据分析脚本):
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 快速数据分析模板
+def quick_analysis(csv_file):
+    df = pd.read_csv(csv_file)
+    
+    # 基础统计
+    print(df.describe())
+    
+    # 可视化
+    df.plot(kind='bar', figsize=(10, 6))
+    plt.savefig('analysis_result.png')
+    
+    return df
+
+# 实用主义原则:不求完美,只求好用
+```
+
+---
+
+## 📚 学习与分享
+
+### 技术文章创作
+
+**创作理念**:
+- 💡 **实践优先** - 所有文章基于真实项目经验
+- 🎯 **问题导向** - 解决具体痛点,不空谈理论
+- 🔍 **深入浅出** - 复杂概念用简单语言解释
+- 🤝 **乐于分享** - 开源思维,共同成长
+
+**文章分类**:
+- 🤖 **AI工具使用指南**
+- 💼 **产品经理实践心得**
+- 🔄 **跨界转型经验分享**
+- 🛠️ **效率工具推荐**
+
+**平台链接**:
+- 📝 [CSDN博客](https://blog.csdn.net/AlbertDS)
+- 🐙 [GitHub](https://github.com/Albert-Lsk)
+
+---
+
+## 🎯 未来规划
+
+### 近期目标 (3-6个月)
+
+- [ ] 开发一个垂直领域AI助手应用
+- [ ] 建立完整的AI工具使用方法论
+- [ ] 输出10篇高质量的实践文章
+- [ ] 参与开源AI项目贡献
+
+### 中期目标 (1-2年)
+
+- [ ] 成为AI产品领域的资深专家
+- [ ] 打造有影响力的个人技术品牌
+- [ ] 推出个人开发的AI应用产品
+- [ ] 建立AI学习社区
+
+---
+
+## 💬 项目合作
+
+如果你对以下方向感兴趣,欢迎联系交流:
+
+- 🤖 **AI工具应用** - 场景探索和最佳实践
+- 💼 **产品设计** - 从0到1的产品构建
+- 🔄 **跨界创新** - 工程思维与产品思维的融合
+- 🛠️ **效率提升** - 个人工作流优化
+
+**联系方式**:
+- 📧 Email: carlalbert9596@gmail.com
+- 🐙 GitHub: [@Albert-Lsk](https://github.com/Albert-Lsk)
+
+---
+
+> "不求精通每一个工具,但求驾驭工具为我所用。这就是'工具驯服师'的理念。"
+
+**期待与你交流,共同探索AI时代的无限可能!** 🚀
