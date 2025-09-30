@@ -1,0 +1,298 @@
+/* ============================================
+   ALSKai Personal Site - v0.1
+   Tech Minimalism Design System
+   ============================================ */
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colors - Dark Theme */
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #1a1a1a;
+    --fg-primary: #e0e0e0;
+    --fg-secondary: #999;
+    --accent: #00ff88;
+    --accent-dim: rgba(0, 255, 136, 0.1);
+    --border: #333;
+    
+    /* Typography */
+    --font-mono: 'SF Mono', 'Monaco', 'Consolas', 'Courier New', monospace;
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+}
+
+/* Typography */
+body {
+    background: var(--bg-primary);
+    color: var(--fg-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+h3 { font-size: 1.25rem; }
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--space-md);
+}
+
+section {
+    margin-bottom: var(--space-xl);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    padding: var(--space-lg) 0;
+}
+
+.hero h1 {
+    margin-bottom: var(--space-md);
+    background: linear-gradient(135deg, var(--fg-primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--fg-secondary);
+    margin-bottom: var(--space-md);
+    font-weight: 400;
+}
+
+.tags {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+}
+
+.tags span {
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--accent);
+    transition: all 0.2s ease;
+}
+
+.tags span:hover {
+    background: var(--accent);
+    color: var(--bg-primary);
+    transform: translateY(-2px);
+}
+
+/* Journey Section */
+.journey h2 {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    margin-bottom: var(--space-md);
+}
+
+.timeline {
+    display: grid;
+    gap: var(--space-md);
+}
+
+.milestone {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: var(--space-md);
+    padding-left: var(--space-md);
+    border-left: 2px solid var(--accent);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.milestone::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--bg-primary);
+}
+
+.milestone:hover {
+    border-left-color: var(--fg-primary);
+}
+
+.milestone:hover::before {
+    background: var(--fg-primary);
+}
+
+.milestone .year {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: block;
+}
+
+.milestone .content h3 {
+    color: var(--fg-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.milestone .content p {
+    color: var(--fg-secondary);
+}
+
+/* Status Section */
+.status {
+    padding: var(--space-lg) 0;
+}
+
+.status-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: var(--space-md);
+}
+
+.status-card h2 {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    margin-bottom: var(--space-sm);
+}
+
+.status-card p {
+    color: var(--fg-secondary);
+    margin-bottom: var(--space-xs);
+}
+
+.status-card .meta {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--accent);
+    margin-top: var(--space-md);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: var(--space-sm);
+}
+
+.progress {
+    height: 100%;
+    background: var(--accent);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px var(--accent);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: var(--space-lg) 0;
+}
+
+.contact h2 {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    margin-bottom: var(--space-sm);
+}
+
+.contact p {
+    color: var(--fg-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.cta {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-md);
+    background: var(--accent);
+    color: var(--bg-primary);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+    transition: all 0.2s ease;
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: var(--space-md) 0;
+    color: var(--fg-secondary);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--border);
+    margin-top: var(--space-xl);
+}
+
+footer .version {
+    font-family: var(--font-mono);
+    color: var(--border);
+    margin-top: var(--space-xs);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    :root {
+        --space-md: 1rem;
+        --space-lg: 2rem;
+        --space-xl: 3rem;
+    }
+    
+    .container {
+        padding: var(--space-sm);
+    }
+    
+    .hero {
+        min-height: 50vh;
+    }
+    
+    .milestone {
+        grid-template-columns: 80px 1fr;
+        gap: var(--space-sm);
+    }
+    
+    .tags {
+        gap: var(--space-xs);
+    }
+}
+
+/* Selection */
+::selection {
+    background: var(--accent);
+    color: var(--bg-primary);
+}
